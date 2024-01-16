@@ -11,6 +11,10 @@
 		B7BDE0E02AAC7E670017ABEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDE0DF2AAC7E670017ABEB /* ContentView.swift */; };
 		B7BDE0E22AAC7E690017ABEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BDE0E12AAC7E690017ABEB /* Assets.xcassets */; };
 		B7BDE0E52AAC7E690017ABEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BDE0E42AAC7E690017ABEB /* Preview Assets.xcassets */; };
+		B7BDE0EC2AACDA000017ABEB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDE0EB2AACDA000017ABEB /* Order.swift */; };
+		B7BDE0F02AACDF950017ABEB /* AdressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDE0EF2AACDF950017ABEB /* AdressView.swift */; };
+		B7BDE0F22AACE2F60017ABEB /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDE0F12AACE2F60017ABEB /* CheckoutView.swift */; };
+		B7BDE0F42AADEB070017ABEB /* String-EmptyChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDE0F32AADEB070017ABEB /* String-EmptyChecking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		B7BDE0DF2AAC7E670017ABEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7BDE0E12AAC7E690017ABEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7BDE0E42AAC7E690017ABEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7BDE0EB2AACDA000017ABEB /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		B7BDE0EF2AACDF950017ABEB /* AdressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressView.swift; sourceTree = "<group>"; };
+		B7BDE0F12AACE2F60017ABEB /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		B7BDE0F32AADEB070017ABEB /* String-EmptyChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-EmptyChecking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,12 @@
 		B7BDE0DC2AAC7E670017ABEB /* CupcakeCorner */ = {
 			isa = PBXGroup;
 			children = (
-				B7BDE0DD2AAC7E670017ABEB /* CupcakeCornerApp.swift */,
+				B7BDE0EF2AACDF950017ABEB /* AdressView.swift */,
+				B7BDE0F12AACE2F60017ABEB /* CheckoutView.swift */,
 				B7BDE0DF2AAC7E670017ABEB /* ContentView.swift */,
+				B7BDE0DD2AAC7E670017ABEB /* CupcakeCornerApp.swift */,
+				B7BDE0EB2AACDA000017ABEB /* Order.swift */,
+				B7BDE0F32AADEB070017ABEB /* String-EmptyChecking.swift */,
 				B7BDE0E12AAC7E690017ABEB /* Assets.xcassets */,
 				B7BDE0E32AAC7E690017ABEB /* Preview Content */,
 			);
@@ -95,7 +107,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					B7BDE0D92AAC7E670017ABEB = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7BDE0F02AACDF950017ABEB /* AdressView.swift in Sources */,
+				B7BDE0EC2AACDA000017ABEB /* Order.swift in Sources */,
+				B7BDE0F22AACE2F60017ABEB /* CheckoutView.swift in Sources */,
 				B7BDE0E02AAC7E670017ABEB /* ContentView.swift in Sources */,
+				B7BDE0F42AADEB070017ABEB /* String-EmptyChecking.swift in Sources */,
 				B7BDE0DE2AAC7E670017ABEB /* CupcakeCornerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +197,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -241,6 +258,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,6 +293,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
